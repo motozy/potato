@@ -23,10 +23,19 @@ body{
     position: absolute;
     left: 0%;
     top: 50%;
-    margin-top: -30vw;
+    margin-top: -30%;
 	padding: 0;
 	width: 100%;
     user-select: none;
+}
+
+@media screen and (orientation:landscape){
+    #potato {
+        margin-top: -15%;
+        padding-left: 25%;
+        padding-right: 25%;
+        width: 50%;
+    }  
 }
 
 #potato.waiting {
@@ -44,7 +53,7 @@ body{
 
 @keyframes potato-ready {
     0% { transform: scale(1); }
-    50% { transform: scale(2); }
+    50% { transform: scale(1.25); }
 }
 
 #potato:active{
